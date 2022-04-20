@@ -30,6 +30,7 @@ print(x,y)
 
 '''
 solution
+idea : 좌표 구할 때 연속된 if문 대신 조건별로 리스트 만들어 for문 돌면서 좌표 적용
 '''
 n = int(input())
 plans = input().split()

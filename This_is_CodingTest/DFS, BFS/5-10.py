@@ -3,19 +3,19 @@
 #idea : 근접한 0이 없을 때까지 하나
 #>>오류 : 상하좌우를 살피는 걸 안함. count 세는 것도 dfs안에서 해결하려함 >> XX dfs는 함수로 처리하고 실제 count는 마지막에 처리, dfs내에서는 True return되게
 
-n,m = map(int,input().split())
-graph = []
-for i in range(n):
-    graph.append(list(map(int,input())))
-count = 0
-def dfs(graph, v, visited):
-    visited[v] = True
-    for i in graph[v]:
-        if i == '0' and not visited[i]:
-            dfs(graph,i,visited)
-
-visited = [False]*n*m
-dfs(graph,0,visited)
+# n,m = map(int,input().split())
+# graph = []
+# for i in range(n):
+#     graph.append(list(map(int,input())))
+# count = 0
+# def dfs(graph, v, visited):
+#     visited[v] = True
+#     for i in graph[v]:
+#         if i == '0' and not visited[i]:
+#             dfs(graph,i,visited)
+#
+# visited = [False]*n*m
+# dfs(graph,0,visited)
 
 #solution
 # 1. 특정 지점의 주변 상,하,좌,우를 살펴본 뒤에
