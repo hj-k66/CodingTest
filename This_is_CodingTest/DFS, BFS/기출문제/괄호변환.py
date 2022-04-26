@@ -46,7 +46,7 @@ def solution(p):
         return answer
     index = balanced_index(p)
     u = p[:index+1]
-    v = p[index+1]
+    v = p[index+1:]
     #u가 올바른 괄호라면, v에 대해 함수 수행한 결과 붙여 반환
     if check_proper(u):
         answer = u + solution(v)
