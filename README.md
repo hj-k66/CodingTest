@@ -1,7 +1,5 @@
-# CodingTest : 코테뿌수기👊
-## 이것이 코딩 테스트다 with 파이썬
-코테뿌수기👊 본격 단계로 '이것이 코딩 테스트다 with 파이썬' 책의 예제와 문제를 풀고 기록한 repository이다.
-
+# CodingTest
+코딩 테스트 대비 문제 풀이 repository입니다.
 
 ### 🧐New Concept & Mistake List
 📌여러 데이터 공백으로 구분하여 한꺼번에 입력받기  
