@@ -1,5 +1,24 @@
 '''
 프로그래머스 Level 1. 완주하지 못한 선수
+'''
+'''
+22.12.07 재풀이
+나의 idea : 해쉬값 : 참가자 이름>> sum
+- sum - 완주자 hash값
+- 남은값을 참가자 이름과 mapping 
+'''
+def solution(participant, completion):
+    hash_map = dict()
+    sum = 0
+    for part in participant:
+        hash_value = hash(part)
+        hash_map[hash_value] = part
+        sum += hash_value
+    for comp in completion:
+        sum -= hash(comp)
+    return hash_map[sum]
+
+'''
 나의 idea : sort하고 루프문 돌면서 매칭해보기
 '''
 def solution(participant, completion):
