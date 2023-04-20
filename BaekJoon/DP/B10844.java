@@ -5,12 +5,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class B10844 {
-
+    static int n;
     static Long[][] dp;
     final static long MOD = 1000000000;
+    //Top-down 방식
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(br.readLine());
+        n = Integer.parseInt(br.readLine());
         
         dp = new Long[n+1][10];
 
@@ -49,5 +50,31 @@ public class B10844 {
 
         }
         return dp[digit][val] % MOD;
+    }
+
+    //Bottom-up 방식
+    public static void otherSolution(){
+        //첫번재 자릿수
+        for(int i = 1; i < 10; i++){
+            dp[1][i] = 1L;
+        }
+        //두번째 자릿수 ~ n번째 자릿수
+        for(int i = 2; i <= n; i++){
+            for(int j = 0; j < 10; j++){
+                if(j == 9){
+                    dp[i][9] = dp[i-1][8]%MOD;
+                } else if (j == 0) {
+                    dp[i][0] = dp[i-1][1]%MOD;
+                }else{
+                    dp[i][j] = (dp[i-1][j-1] + dp[i-1][j+1])%MOD;
+                }
+            }
+        }
+
+        long answer = 0;
+        for(int i = 0; i < 10; i++){
+            answer += dp[n][i];
+        }
+        System.out.println(answer%MOD);
     }
 }
