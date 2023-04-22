@@ -12,11 +12,12 @@ public class B9465 {
 
         for (int i = 0; i < T; i++) {
             int n = Integer.parseInt(br.readLine());
+
             int[][] sticker = new int[2][n+1];
             int[][] dp = new int[2][n+1];
             for (int j = 0; j < 2; j++) {
                 StringTokenizer st = new StringTokenizer(br.readLine());
-                for (int k = 0; k < n; k++) {
+                for (int k = 1; k <= n; k++) {
                     sticker[j][k] = Integer.parseInt(st.nextToken());
                 }
             }
