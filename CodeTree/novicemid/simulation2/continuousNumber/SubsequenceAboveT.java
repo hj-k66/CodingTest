@@ -1,4 +1,4 @@
-package CodingTest.CodeTree.novicemid.simulation1.continuousNumber;
+package CodingTest.CodeTree.novicemid.simulation2.continuousNumber;
 
 import java.io.BufferedReader;
 import java.io.IOException;
