@@ -1,4 +1,4 @@
-package CodingTest.BaekJoon.그래프
+package CodingTest.BaekJoon.그래프;
 
 import java.io.BufferedReader;
 import java.io.IOException;

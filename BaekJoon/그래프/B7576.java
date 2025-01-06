@@ -1,3 +1,5 @@
+package CodingTest.BaekJoon.그래프;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -10,7 +12,7 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 // 101492KB	|	568ms
-public class Main {
+public class B7576 {
 	static int N;
 	static int M;
 	static int[][] map;

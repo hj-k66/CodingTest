@@ -1,9 +1,11 @@
+package CodingTest.BaekJoon.그래프;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+public class B3109 {
 	static char[][] map;
 	static int R;
 	static int C;

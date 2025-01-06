@@ -24,7 +24,7 @@ import java.util.StringTokenizer;
 // - visited[x][y] = true;
 // - map에는 표시 x
 // q.offer(new Node(x,y,고슴도치))
-public class Main_B_3055_탈출_김희정 {
+public class B3055{
 	
 	static int R;
 	static int C;
