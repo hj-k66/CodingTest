@@ -1,4 +1,4 @@
-package CodingTest.BaekJoon;
+package CodingTest.BaekJoon.순조부;
 
 import java.io.BufferedReader;
 import java.io.IOException;
