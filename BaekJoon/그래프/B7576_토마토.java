@@ -77,7 +77,7 @@ public class B7576_토마토 {
     }
 
     static void BFS(){
-        int day = -1;
+        int day = 0;
         while(!q.isEmpty()){
             int size = q.size();
             while(size-- > 0){
